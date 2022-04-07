@@ -279,16 +279,16 @@ public class calculadoraInterface extends javax.swing.JFrame {
 
     private void btnIgualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIgualActionPerformed
         valor2 = Double.parseDouble(txtResultado.getText());
-        if(sinalMatematico.equals("soma") ){
+        if(sinalMatematico.equals("+") ){
            txtResultado.setText(String.valueOf(valor1+valor2));
         }
-        if(sinalMatematico.equals("subtrai")){
+        if(sinalMatematico.equals("-")){
            txtResultado.setText(String.valueOf(valor1-valor2)); 
         }
-        if(sinalMatematico.equals("multiplica")){
+        if(sinalMatematico.equals("*")){
            txtResultado.setText(String.valueOf(valor1*valor2));  
         }
-        if(sinalMatematico.equals("divide")){
+        if(sinalMatematico.equals("/")){
            txtResultado.setText(String.valueOf(valor1/valor2)); 
         }
         
@@ -297,7 +297,7 @@ public class calculadoraInterface extends javax.swing.JFrame {
     private void btnSubtraiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubtraiActionPerformed
          valor1 = Double.parseDouble(txtResultado.getText());
          txtResultado.setText("");
-        sinalMatematico = "subtrai";
+        sinalMatematico = "-";
     }//GEN-LAST:event_btnSubtraiActionPerformed
 
     private void btnZeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnZeroActionPerformed
@@ -348,19 +348,19 @@ public class calculadoraInterface extends javax.swing.JFrame {
 
         valor1 = Double.parseDouble(txtResultado.getText());
          txtResultado.setText("");
-        sinalMatematico = "soma";
+        sinalMatematico = "+";
     }//GEN-LAST:event_btnSomaActionPerformed
 
     private void btnMultiplicaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMultiplicaActionPerformed
         valor1 = Double.parseDouble(txtResultado.getText());
         txtResultado.setText("");
-        sinalMatematico = "multiplica";
+        sinalMatematico = "*";
     }//GEN-LAST:event_btnMultiplicaActionPerformed
 
     private void btnDivideActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDivideActionPerformed
          valor1 = Double.parseDouble(txtResultado.getText());
         txtResultado.setText("");
-        sinalMatematico = "divide";
+        sinalMatematico = "/";
     }//GEN-LAST:event_btnDivideActionPerformed
 
     private void btnLimpaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpaActionPerformed
